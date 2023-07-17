@@ -216,6 +216,12 @@ Suggestions are welcome to be filed via the GitHub issue tracker for this reposi
 |Hi-Fi Rush|Tango Gameworks|UE4|2023|<details><summary>Expand</summary>- [DF Tech Review](https://www.youtube.com/watch?v=8qppoWhanwk)<br></details>|
 
 ---
+## Analysis - Consoles
+
+|Console|Developer|Year|Analysis|
+|:---|:---|:---|:---|
+|PlayStation 5|Sony|2020|[Giant Bomb](https://www.giantbomb.com/playstation-5/3045-176/)|
+---
 
 ## References
 - [Behind the Pretty Frames](https://mamoniem.com/category/behind-the-pretty-frames/)
@@ -236,3 +242,11 @@ Suggestions are welcome to be filed via the GitHub issue tracker for this reposi
 - [r/videogamescience](https://www.reddit.com/r/videogamescience/)
 - [GDC Vault](https://www.gdcvault.com/)
 - [GDC's Programming Talks](https://www.youtube.com/playlist?list=PL2e4mYbwSTbaw1l65rE0Gv6_B9ctOzYyW)
+- [SIGGRAPH courses](https://advances.realtimerendering.com/)
+- [Guerrilla's News feed](https://www.guerrilla-games.com/read)
+- [Statista](https://www.statista.com/topics/7461/game-consoles/#topicOverview)
+- [Gamer Nexus](https://www.gamersnexus.net/)
+- [TechSpot](https://www.techspot.com/)
+- [Digital Foundry](https://www.digitalfoundry.net/)
+- [PlayStation Blog](https://blog.playstation.com/)
+- [Giant Bomb](https://www.giantbomb.com/platforms/)

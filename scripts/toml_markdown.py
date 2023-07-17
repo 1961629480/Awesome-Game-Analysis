@@ -149,6 +149,14 @@ section_reference='''
 - [r/videogamescience](https://www.reddit.com/r/videogamescience/)
 - [GDC Vault](https://www.gdcvault.com/)
 - [GDC's Programming Talks](https://www.youtube.com/playlist?list=PL2e4mYbwSTbaw1l65rE0Gv6_B9ctOzYyW)
+- [SIGGRAPH courses](https://advances.realtimerendering.com/)
+- [Guerrilla's News feed](https://www.guerrilla-games.com/read)
+- [Statista](https://www.statista.com/topics/7461/game-consoles/#topicOverview)
+- [Gamer Nexus](https://www.gamersnexus.net/)
+- [TechSpot](https://www.techspot.com/)
+- [Digital Foundry](https://www.digitalfoundry.net/)
+- [PlayStation Blog](https://blog.playstation.com/)
+- [Giant Bomb](https://www.giantbomb.com/platforms/)
 '''
 
 def compare_files(file1, file2):
@@ -227,18 +235,26 @@ if __name__ == "__main__":
         if args.type == 'toml':
             if args.readme:
                 try:
-                    olddict = markdown_to_dict('README.md')
-                    newdict = toml_to_dict(f.read())
-                    change = check_change(olddict, newdict)
-                    if not change :
-                        sys.exit(1)
+                    # TODO multiple analysis sections
+                    # olddict = markdown_to_dict('README.md')
+                    # newdict = toml_to_dict(f.read())
+                    # change = check_change(olddict, newdict)
+                    # if not change :
+                    #     sys.exit(1)
                     section_games='''## Analysis - Games\n\n|Game|Developer|Engine|Year|Analysis|\n|:---|:---|:---|:---|:---|'''.strip() + "\n"
                     f.seek(0)
                     section_games += toml_to_markdown(f.read())
+
+                    # TODO
+                    section_consoles='''## Analysis - Consoles\n\n|Console|Developer|Year|Analysis|\n|:---|:---|:---|:---|'''.strip() + "\n"
+                    section_consoles+='''|PlayStation 5|Sony|2020|[Giant Bomb](https://www.giantbomb.com/playstation-5/3045-176/)|'''.strip()
+
                     res = ""
                     res += section_top
                     res += "\n---\n\n"
                     res += section_games
+                    res += "\n---\n"
+                    res += section_consoles
                     res += "\n---\n"
                     res += section_reference
                     readme = open("README.md", "w")
